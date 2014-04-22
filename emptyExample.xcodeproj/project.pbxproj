@@ -21,6 +21,11 @@
 		AA01159818FC848800A6631A /* PatternEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA01159618FC848800A6631A /* PatternEditor.cpp */; };
 		AA02098718E89BE500D6C1CB /* BoardQuadrant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA02098518E89BE500D6C1CB /* BoardQuadrant.cpp */; };
 		AA02098A18E89D2F00D6C1CB /* BoardPartition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */; };
+		AA56AD1E1905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD181905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp */; };
+		AA56AD1F1905D28A00C76484 /* Mover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD1A1905D28A00C76484 /* Mover.cpp */; };
+		AA56AD201905D28A00C76484 /* StraightLineMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD1C1905D28A00C76484 /* StraightLineMover.cpp */; };
+		AA56AD231905D46500C76484 /* SketchWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD211905D46500C76484 /* SketchWriter.cpp */; };
+		AA56AD261905F25D00C76484 /* Serializable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD241905F25D00C76484 /* Serializable.cpp */; };
 		AA84443918E75D8C0093D8CD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84442518E75D8C0093D8CD /* main.cpp */; };
 		AA84443A18E75D8C0093D8CD /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84442718E75D8C0093D8CD /* Bullet.cpp */; };
 		AA84443B18E75D8C0093D8CD /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84442918E75D8C0093D8CD /* GameObject.cpp */; };
@@ -142,6 +147,16 @@
 		AA02098618E89BE500D6C1CB /* BoardQuadrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardQuadrant.h; sourceTree = "<group>"; };
 		AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardPartition.cpp; sourceTree = "<group>"; };
 		AA02098918E89D2F00D6C1CB /* BoardPartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardPartition.h; sourceTree = "<group>"; };
+		AA56AD181905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicBoundedStraightLineMover.cpp; sourceTree = "<group>"; };
+		AA56AD191905D28A00C76484 /* CyclicBoundedStraightLineMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicBoundedStraightLineMover.h; sourceTree = "<group>"; };
+		AA56AD1A1905D28A00C76484 /* Mover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mover.cpp; sourceTree = "<group>"; };
+		AA56AD1B1905D28A00C76484 /* Mover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mover.h; sourceTree = "<group>"; };
+		AA56AD1C1905D28A00C76484 /* StraightLineMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StraightLineMover.cpp; sourceTree = "<group>"; };
+		AA56AD1D1905D28A00C76484 /* StraightLineMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StraightLineMover.h; sourceTree = "<group>"; };
+		AA56AD211905D46500C76484 /* SketchWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SketchWriter.cpp; sourceTree = "<group>"; };
+		AA56AD221905D46500C76484 /* SketchWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SketchWriter.h; sourceTree = "<group>"; };
+		AA56AD241905F25D00C76484 /* Serializable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Serializable.cpp; path = src/objects/Serializable.cpp; sourceTree = SOURCE_ROOT; };
+		AA56AD251905F25D00C76484 /* Serializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Serializable.h; path = src/objects/Serializable.h; sourceTree = SOURCE_ROOT; };
 		AA84442518E75D8C0093D8CD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AA84442718E75D8C0093D8CD /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
 		AA84442818E75D8C0093D8CD /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
@@ -370,13 +385,30 @@
 			path = vs2010;
 			sourceTree = "<group>";
 		};
+		AA56AD171905D28A00C76484 /* movers */ = {
+			isa = PBXGroup;
+			children = (
+				AA56AD181905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp */,
+				AA56AD191905D28A00C76484 /* CyclicBoundedStraightLineMover.h */,
+				AA56AD1A1905D28A00C76484 /* Mover.cpp */,
+				AA56AD1B1905D28A00C76484 /* Mover.h */,
+				AA56AD1C1905D28A00C76484 /* StraightLineMover.cpp */,
+				AA56AD1D1905D28A00C76484 /* StraightLineMover.h */,
+			);
+			path = movers;
+			sourceTree = "<group>";
+		};
 		AA84442618E75D8C0093D8CD /* objects */ = {
 			isa = PBXGroup;
 			children = (
+				AA56AD211905D46500C76484 /* SketchWriter.cpp */,
+				AA56AD221905D46500C76484 /* SketchWriter.h */,
 				AA01159618FC848800A6631A /* PatternEditor.cpp */,
 				AA01159718FC848800A6631A /* PatternEditor.h */,
 				AA84442718E75D8C0093D8CD /* Bullet.cpp */,
 				AA84442818E75D8C0093D8CD /* Bullet.h */,
+				AA56AD241905F25D00C76484 /* Serializable.cpp */,
+				AA56AD251905F25D00C76484 /* Serializable.h */,
 				AA84442918E75D8C0093D8CD /* GameObject.cpp */,
 				AA84442A18E75D8C0093D8CD /* GameObject.h */,
 				AA84442B18E75D8C0093D8CD /* Player.cpp */,
@@ -493,6 +525,7 @@
 				AA84444318E75D930093D8CD /* testApp.h */,
 				AA84443818E75D8C0093D8CD /* testApp.cpp */,
 				AA84442518E75D8C0093D8CD /* main.cpp */,
+				AA56AD171905D28A00C76484 /* movers */,
 				AA84442618E75D8C0093D8CD /* objects */,
 				AA84442D18E75D8C0093D8CD /* patterns */,
 			);
@@ -596,6 +629,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA84443C18E75D8C0093D8CD /* Player.cpp in Sources */,
+				AA56AD261905F25D00C76484 /* Serializable.cpp in Sources */,
 				AA84443D18E75D8C0093D8CD /* BulletPattern.cpp in Sources */,
 				AA01155B18FC83CB00A6631A /* ofxGamepadLinux.cpp in Sources */,
 				AA84443918E75D8C0093D8CD /* main.cpp in Sources */,
@@ -603,6 +637,8 @@
 				AA02098A18E89D2F00D6C1CB /* BoardPartition.cpp in Sources */,
 				AA84443F18E75D8C0093D8CD /* FanOutBulletPattern.cpp in Sources */,
 				AA01159818FC848800A6631A /* PatternEditor.cpp in Sources */,
+				AA56AD231905D46500C76484 /* SketchWriter.cpp in Sources */,
+				AA56AD201905D28A00C76484 /* StraightLineMover.cpp in Sources */,
 				AA01155C18FC83CB00A6631A /* ofxGamepadOIS.cpp in Sources */,
 				AA84444218E75D8C0093D8CD /* testApp.cpp in Sources */,
 				AA84443A18E75D8C0093D8CD /* Bullet.cpp in Sources */,
@@ -614,6 +650,8 @@
 				AA02098718E89BE500D6C1CB /* BoardQuadrant.cpp in Sources */,
 				AA84444918E769EE0093D8CD /* TargetedBulletPattern.cpp in Sources */,
 				AA84444C18E78A5D0093D8CD /* BulletPatternGroup.cpp in Sources */,
+				AA56AD1F1905D28A00C76484 /* Mover.cpp in Sources */,
+				AA56AD1E1905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp in Sources */,
 				AA84443B18E75D8C0093D8CD /* GameObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
