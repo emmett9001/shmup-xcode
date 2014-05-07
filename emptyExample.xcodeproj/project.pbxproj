@@ -38,6 +38,8 @@
 		AA84444218E75D8C0093D8CD /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84443818E75D8C0093D8CD /* testApp.cpp */; };
 		AA84444918E769EE0093D8CD /* TargetedBulletPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84444718E769EE0093D8CD /* TargetedBulletPattern.cpp */; };
 		AA84444C18E78A5D0093D8CD /* BulletPatternGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84444A18E78A5D0093D8CD /* BulletPatternGroup.cpp */; };
+		AAF54673191846320038A28B /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF54671191846320038A28B /* Camera.cpp */; };
+		AAF54676191857FF0038A28B /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF54674191857FF0038A28B /* Background.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -181,6 +183,11 @@
 		AA84444A18E78A5D0093D8CD /* BulletPatternGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletPatternGroup.cpp; sourceTree = "<group>"; };
 		AA84444B18E78A5D0093D8CD /* BulletPatternGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletPatternGroup.h; sourceTree = "<group>"; };
 		AAC40C0D18E86463000BBEAF /* emptyExampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emptyExampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF54670191843F00038A28B /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = notes.txt; path = src/notes.txt; sourceTree = "<group>"; };
+		AAF54671191846320038A28B /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		AAF54672191846320038A28B /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		AAF54674191857FF0038A28B /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Background.cpp; sourceTree = "<group>"; };
+		AAF54675191857FF0038A28B /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Background.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -401,6 +408,8 @@
 		AA84442618E75D8C0093D8CD /* objects */ = {
 			isa = PBXGroup;
 			children = (
+				AAF54671191846320038A28B /* Camera.cpp */,
+				AAF54672191846320038A28B /* Camera.h */,
 				AA56AD211905D46500C76484 /* SketchWriter.cpp */,
 				AA56AD221905D46500C76484 /* SketchWriter.h */,
 				AA01159618FC848800A6631A /* PatternEditor.cpp */,
@@ -417,6 +426,8 @@
 				AA02098618E89BE500D6C1CB /* BoardQuadrant.h */,
 				AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */,
 				AA02098918E89D2F00D6C1CB /* BoardPartition.h */,
+				AAF54674191857FF0038A28B /* Background.cpp */,
+				AAF54675191857FF0038A28B /* Background.h */,
 			);
 			path = objects;
 			sourceTree = "<group>";
@@ -508,6 +519,7 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				AAF54670191843F00038A28B /* notes.txt */,
 				AAC40C0E18E86834000BBEAF /* libs */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
@@ -628,6 +640,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF54673191846320038A28B /* Camera.cpp in Sources */,
 				AA84443C18E75D8C0093D8CD /* Player.cpp in Sources */,
 				AA56AD261905F25D00C76484 /* Serializable.cpp in Sources */,
 				AA84443D18E75D8C0093D8CD /* BulletPattern.cpp in Sources */,
@@ -642,6 +655,7 @@
 				AA01155C18FC83CB00A6631A /* ofxGamepadOIS.cpp in Sources */,
 				AA84444218E75D8C0093D8CD /* testApp.cpp in Sources */,
 				AA84443A18E75D8C0093D8CD /* Bullet.cpp in Sources */,
+				AAF54676191857FF0038A28B /* Background.cpp in Sources */,
 				AA84444118E75D8C0093D8CD /* RadialBulletPattern.cpp in Sources */,
 				AA01155A18FC83CB00A6631A /* ofxGamepadHandler.cpp in Sources */,
 				AA01155818FC83CB00A6631A /* ofxGamepad.cpp in Sources */,
