@@ -38,6 +38,7 @@
 		AA84444218E75D8C0093D8CD /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84443818E75D8C0093D8CD /* testApp.cpp */; };
 		AA84444918E769EE0093D8CD /* TargetedBulletPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84444718E769EE0093D8CD /* TargetedBulletPattern.cpp */; };
 		AA84444C18E78A5D0093D8CD /* BulletPatternGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA84444A18E78A5D0093D8CD /* BulletPatternGroup.cpp */; };
+		AAD16925191EF6730013A033 /* Stage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAD16923191EF6730013A033 /* Stage.cpp */; };
 		AAF54673191846320038A28B /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF54671191846320038A28B /* Camera.cpp */; };
 		AAF54676191857FF0038A28B /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF54674191857FF0038A28B /* Background.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
@@ -147,7 +148,7 @@
 		AA01159718FC848800A6631A /* PatternEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatternEditor.h; sourceTree = "<group>"; };
 		AA02098518E89BE500D6C1CB /* BoardQuadrant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardQuadrant.cpp; sourceTree = "<group>"; };
 		AA02098618E89BE500D6C1CB /* BoardQuadrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardQuadrant.h; sourceTree = "<group>"; };
-		AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BoardPartition.cpp; sourceTree = "<group>"; };
+		AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = BoardPartition.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		AA02098918E89D2F00D6C1CB /* BoardPartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardPartition.h; sourceTree = "<group>"; };
 		AA56AD181905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicBoundedStraightLineMover.cpp; sourceTree = "<group>"; };
 		AA56AD191905D28A00C76484 /* CyclicBoundedStraightLineMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicBoundedStraightLineMover.h; sourceTree = "<group>"; };
@@ -183,6 +184,8 @@
 		AA84444A18E78A5D0093D8CD /* BulletPatternGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BulletPatternGroup.cpp; sourceTree = "<group>"; };
 		AA84444B18E78A5D0093D8CD /* BulletPatternGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletPatternGroup.h; sourceTree = "<group>"; };
 		AAC40C0D18E86463000BBEAF /* emptyExampleDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emptyExampleDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD16923191EF6730013A033 /* Stage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stage.cpp; sourceTree = "<group>"; };
+		AAD16924191EF6730013A033 /* Stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stage.h; sourceTree = "<group>"; };
 		AAF54670191843F00038A28B /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = notes.txt; path = src/notes.txt; sourceTree = "<group>"; };
 		AAF54671191846320038A28B /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
 		AAF54672191846320038A28B /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
@@ -408,6 +411,8 @@
 		AA84442618E75D8C0093D8CD /* objects */ = {
 			isa = PBXGroup;
 			children = (
+				AAD16923191EF6730013A033 /* Stage.cpp */,
+				AAD16924191EF6730013A033 /* Stage.h */,
 				AAF54671191846320038A28B /* Camera.cpp */,
 				AAF54672191846320038A28B /* Camera.h */,
 				AA56AD211905D46500C76484 /* SketchWriter.cpp */,
@@ -666,6 +671,7 @@
 				AA84444C18E78A5D0093D8CD /* BulletPatternGroup.cpp in Sources */,
 				AA56AD1F1905D28A00C76484 /* Mover.cpp in Sources */,
 				AA56AD1E1905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp in Sources */,
+				AAD16925191EF6730013A033 /* Stage.cpp in Sources */,
 				AA84443B18E75D8C0093D8CD /* GameObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
