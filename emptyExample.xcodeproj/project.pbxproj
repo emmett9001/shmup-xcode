@@ -21,6 +21,8 @@
 		AA01159818FC848800A6631A /* PatternEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA01159618FC848800A6631A /* PatternEditor.cpp */; };
 		AA02098718E89BE500D6C1CB /* BoardQuadrant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA02098518E89BE500D6C1CB /* BoardQuadrant.cpp */; };
 		AA02098A18E89D2F00D6C1CB /* BoardPartition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */; };
+		AA554C971922CD1A00CB6AD6 /* Marker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA554C951922CD1A00CB6AD6 /* Marker.cpp */; };
+		AA554C9A1922D6D200CB6AD6 /* ScrollSpeedMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA554C981922D6D200CB6AD6 /* ScrollSpeedMarker.cpp */; };
 		AA56AD1E1905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD181905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp */; };
 		AA56AD1F1905D28A00C76484 /* Mover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD1A1905D28A00C76484 /* Mover.cpp */; };
 		AA56AD201905D28A00C76484 /* StraightLineMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA56AD1C1905D28A00C76484 /* StraightLineMover.cpp */; };
@@ -150,6 +152,10 @@
 		AA02098618E89BE500D6C1CB /* BoardQuadrant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardQuadrant.h; sourceTree = "<group>"; };
 		AA02098818E89D2F00D6C1CB /* BoardPartition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = BoardPartition.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		AA02098918E89D2F00D6C1CB /* BoardPartition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardPartition.h; sourceTree = "<group>"; };
+		AA554C951922CD1A00CB6AD6 /* Marker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Marker.cpp; sourceTree = "<group>"; };
+		AA554C961922CD1A00CB6AD6 /* Marker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marker.h; sourceTree = "<group>"; };
+		AA554C981922D6D200CB6AD6 /* ScrollSpeedMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollSpeedMarker.cpp; sourceTree = "<group>"; };
+		AA554C991922D6D200CB6AD6 /* ScrollSpeedMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollSpeedMarker.h; sourceTree = "<group>"; };
 		AA56AD181905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyclicBoundedStraightLineMover.cpp; sourceTree = "<group>"; };
 		AA56AD191905D28A00C76484 /* CyclicBoundedStraightLineMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyclicBoundedStraightLineMover.h; sourceTree = "<group>"; };
 		AA56AD1A1905D28A00C76484 /* Mover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mover.cpp; sourceTree = "<group>"; };
@@ -395,6 +401,17 @@
 			path = vs2010;
 			sourceTree = "<group>";
 		};
+		AA554C941922CD1A00CB6AD6 /* markers */ = {
+			isa = PBXGroup;
+			children = (
+				AA554C951922CD1A00CB6AD6 /* Marker.cpp */,
+				AA554C961922CD1A00CB6AD6 /* Marker.h */,
+				AA554C981922D6D200CB6AD6 /* ScrollSpeedMarker.cpp */,
+				AA554C991922D6D200CB6AD6 /* ScrollSpeedMarker.h */,
+			);
+			path = markers;
+			sourceTree = "<group>";
+		};
 		AA56AD171905D28A00C76484 /* movers */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +559,7 @@
 				AA84444318E75D930093D8CD /* testApp.h */,
 				AA84443818E75D8C0093D8CD /* testApp.cpp */,
 				AA84442518E75D8C0093D8CD /* main.cpp */,
+				AA554C941922CD1A00CB6AD6 /* markers */,
 				AA56AD171905D28A00C76484 /* movers */,
 				AA84442618E75D8C0093D8CD /* objects */,
 				AA84442D18E75D8C0093D8CD /* patterns */,
@@ -647,6 +665,7 @@
 			files = (
 				AAF54673191846320038A28B /* Camera.cpp in Sources */,
 				AA84443C18E75D8C0093D8CD /* Player.cpp in Sources */,
+				AA554C9A1922D6D200CB6AD6 /* ScrollSpeedMarker.cpp in Sources */,
 				AA56AD261905F25D00C76484 /* Serializable.cpp in Sources */,
 				AA84443D18E75D8C0093D8CD /* BulletPattern.cpp in Sources */,
 				AA01155B18FC83CB00A6631A /* ofxGamepadLinux.cpp in Sources */,
@@ -673,6 +692,7 @@
 				AA56AD1E1905D28A00C76484 /* CyclicBoundedStraightLineMover.cpp in Sources */,
 				AAD16925191EF6730013A033 /* Stage.cpp in Sources */,
 				AA84443B18E75D8C0093D8CD /* GameObject.cpp in Sources */,
+				AA554C971922CD1A00CB6AD6 /* Marker.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
